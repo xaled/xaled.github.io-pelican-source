@@ -1,5 +1,7 @@
 # my ignores
-other-themes/
+/pelican-themes/
+/pelican-plugins/
+/other-themes/
 output/
 .idea/
 

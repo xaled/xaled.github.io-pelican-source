@@ -59,10 +59,14 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
 
 # CUSTOM theme: blueidea:
-DISPLAY_SEARCH_FORM=True
-DISPLAY_PAGES_ON_MENU=True
-DISPLAY_CATEGORIES_ON_MENU=False
-DISPLAY_CATEGORIES_ON_SUBMENU=True
-#LINKS = (('twitter', 'http://twitter.com/khalid_grandi'), ('github', 'http://github.com/xaled'),)
+# DISPLAY_SEARCH_FORM=True
+# DISPLAY_PAGES_ON_MENU=True
+# DISPLAY_CATEGORIES_ON_MENU=False
+# DISPLAY_CATEGORIES_ON_SUBMENU=True
+# #LINKS = (('twitter', 'http://twitter.com/khalid_grandi'), ('github', 'http://github.com/xaled'),)
 
-
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
